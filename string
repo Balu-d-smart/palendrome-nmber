@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+   int i,length;
+   int flag=0;
+  char arr[20];
+   printf("enter a string:");
+ scanf("%s",arr);
+ length = strlen(arr);
+for(i=0;i<length;i++)
+   {
+ if(arr[i]!=arr[length-i-1])
+{ flag=1;
+ break;}
+ }
+   if(flag)
+       printf("the number is not palendrome string");  
+else
+    printf("the number is  palendrome string");
+    return 0;
+}
